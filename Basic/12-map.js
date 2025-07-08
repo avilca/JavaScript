@@ -19,8 +19,6 @@ console.log(myMap);
 // Métodos
 
 
-
-
 // set.- Sirve para añadir un nuevo o actualizar elemento al mapa
 
 myMap.set("alias","footgolito");
