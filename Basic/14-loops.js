@@ -31,6 +31,9 @@ while(true){
 
 // do while
 
+
+console.log("======do while ========")
+
 i = 6;
 
 do {
