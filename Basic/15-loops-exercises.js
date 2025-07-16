@@ -40,4 +40,4 @@ console.log("==========Pregunta Nro 4 ============");
 
 // 4. Dado un array de nombres, usa un bucle para imprimir cada nombre en la consola
 
-
+myName = "Andres Vilca" 
