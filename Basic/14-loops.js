@@ -3,7 +3,7 @@
 // for
 
 for (let i = 0; i < 5; i++){
-    console.log("Hola");
+    console.log(i);
 }
 
 
@@ -78,7 +78,7 @@ for (let valor of myString) {
 
 // break y continue
 
-for (let i = 0; i < 10; i++){
+for (let i = 0; i < 10; i++) {
     if (i == 5) {
         continue;
     } else if (i == 6) {
