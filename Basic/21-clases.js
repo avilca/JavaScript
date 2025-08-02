@@ -116,8 +116,6 @@ class GetSetPerson {
         this.#banco = newBanco // Es de escritura
     }
 
-
- 
 }
 
 persona6 = new GetSetPerson("Jesús", 41, "Pahino", "123456789")
