@@ -15,6 +15,7 @@ function processGreeting(greetFunction, name) {
 
 processGreeting(greet, "Footgolito")
 
+
 function returnGreeting(name) {
     return greet
 }
@@ -145,8 +146,10 @@ const sumAB = currySum(1)(2)
 const sumC = sumAB(3)
 
 console.log(sumC(3))
-console.log(sumC(4))
-console.log(sumAB(5)(7))
+//console.log(sumC(4))
+//console.log(sumAB(5)(7))
+
+console.log("==================")
 
 //  Callbacks
 
