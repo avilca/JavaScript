@@ -95,15 +95,51 @@ console.log("============ PREGUNTA 6 ============")
 
 function sumManyTime(multiplier, ...numbers) {
 
-    let result = 0
+    let result = 0;
 
     for (let number of numbers) {
-        result += number;
-    }
-    return result * multiplier;
+        result += number;  
 
-    
+    }
+       
+    return result * multiplier;    
 
 }
 
-console.log(sumManyTime(5, 8))
+
+
+console.log(sumManyTime(2,5));
+
+
+
+
+// 6. Crea un Callback que se invoque con el resultado de la suma de todo los números que se le pasan a una función
+
+console.log("============CALLBACKS======")
+
+function sumar(...numbers) {  // función que suma los números
+
+    let result = 0;
+
+    for (let number of numbers) {
+        result += number;  
+
+    }
+       
+    return result;    
+
+}
+
+
+function sumarNumeros(data, callback) { // usando el callback para invocar  la función sumar
+    const result = sumar(...data)
+    callback(result);
+}
+
+
+
+function processResult(result) {  // procesando el resultado
+    console.log(result)
+}
+
+sumarNumeros([1, 2, 8, 10, 50], processResult);

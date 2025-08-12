@@ -63,6 +63,8 @@ handler.arrowGreeting();
 
 // Parámetros Rest (...)
 
+console.log("=================REST=============")
+
 function sumar(...numbers) {
 
     let result = 0
@@ -73,9 +75,9 @@ function sumar(...numbers) {
     return result;
 }
 
-console.log(sumar(1, 2, 3, 4, 5))
+console.log(sumar(1, 2, 5))
 console.log(sumar(10, 15))
-
+console.log("===================================")
 
 // Operador Spread (...)
 
@@ -146,13 +148,13 @@ const sumAB = currySum(1)(2)
 const sumC = sumAB(3)
 
 console.log(sumC(3))
-//console.log(sumC(4))
-//console.log(sumAB(5)(7))
+console.log(sumC(4))
+console.log(sumAB(5)(7))
 
 console.log("==================")
 
 //  Callbacks
-
+console.log("============CALLBACKS======")
 function processData(data, callback) {
     const result = sumar(...data)
     callback(result)
@@ -163,14 +165,14 @@ function processResult(result) {
     console.log(result)
 }
 
-function processResult2(result) {
-    console.log(`Mi reusltado es:  ${result}`)
-}
+//function processResult2(result) {
+//    console.log(`Mi reusltado es:  ${result}`)
+//}
 
 
 
-processData([1, 2, 3], processResult)
-processData([1, 2, 3], processResult2)
-processData([1, 2, 3], (result) => {
-    console.log(`Mi resultado en la arrow function es:  ${result}`)
-})
+processData([1, 2, 8,10], processResult)
+//processData([1, 2, 3], processResult2)
+//processData([1, 2, 3], (result) => {
+//    console.log(`Mi resultado en la arrow function es:  ${result}`)
+//})
