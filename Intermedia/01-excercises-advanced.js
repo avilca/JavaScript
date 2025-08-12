@@ -81,9 +81,29 @@ function createCouter() {
 
 const contador = createCouter();
 
-contador.increment(5);
-contador.decrement(6);
+contador.increment(35);
+contador.decrement(2);
 console.log(`el valor final es: ${contador.getValue()}`);
 
 
+// 5. Crea una función sumManyTime(multiplier,  ...numbers) que primero
+//  sume todos los números (usando parámetros Rest) y luego multiplique el resultado por multiplier
 
+
+console.log("============ PREGUNTA 6 ============")
+
+
+function sumManyTime(multiplier, ...numbers) {
+
+    let result = 0
+
+    for (let number of numbers) {
+        result += number;
+    }
+    return result * multiplier;
+
+    
+
+}
+
+console.log(sumManyTime(5, 8))
