@@ -160,3 +160,15 @@ const sumWith = sumaParcial(2)
 console.log(sumWith(3))
 
 // 8. Implementa un ejemplo que haga uso de Spread
+
+console.log("============PREGUNTA 8 Spread=============")
+
+
+
+const numeros = [1, 2, 3];
+
+function sumarconSpread(a, b, c) {
+    return a + b + c; 
+}
+
+console.log(sumarconSpread(...numeros))
