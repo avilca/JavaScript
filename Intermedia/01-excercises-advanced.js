@@ -172,3 +172,10 @@ function sumarconSpread(a, b, c) {
 }
 
 console.log(sumarconSpread(...numeros))
+
+// 9. Implementa un retorno implícito
+
+console.log("============PREGUNTA 9 Retorno Implicito=============")
+
+const multiplicar = (a, b) => a * b;
+console.log(multiplicar(3, 11));
