@@ -179,3 +179,18 @@ console.log("============PREGUNTA 9 Retorno Implicito=============")
 
 const multiplicar = (a, b) => a * b;
 console.log(multiplicar(3, 11));
+
+
+// 10. Haz uso del this léxico
+
+const handler = {
+    name: "Tanyiro",
+
+   greeting: function() {
+        console.log(`Hola, ${this.name}`)
+    },
+
+}
+
+handler.greeting()
+

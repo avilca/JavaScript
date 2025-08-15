@@ -33,7 +33,7 @@ greet2("Jhony")
 const multiply = (a, b) => a * b;
 console.log(multiply(2, 5));
 
-// - this léxico
+// 10 - this léxico
 const handler = {
     name: "Jesús",
 
