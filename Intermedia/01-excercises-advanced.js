@@ -143,3 +143,20 @@ function processResult(result) {  // procesando el resultado
 }
 
 sumarNumeros([1, 2, 8, 10, 50], processResult);
+
+
+// 7. Desarrolla una función parcial
+
+console.log("============PREGUNTA 7===========")
+
+function sumaParcial (a) {
+    return function (b){
+        return a + b;
+    }
+}
+
+const sumWith = sumaParcial(2)
+
+console.log(sumWith(3))
+
+// 8. Implementa un ejemplo que haga uso de Spread
