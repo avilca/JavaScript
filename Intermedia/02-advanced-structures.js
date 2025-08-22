@@ -153,3 +153,4 @@ console.log(objectFromMap)
 
 const mapFromObject = new Map(Object.entries(objectFromMap))
 console.log(mapFromObject)
+

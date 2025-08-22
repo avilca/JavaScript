@@ -57,3 +57,20 @@ console.log("Array original: ", arrays);
 
 let flatten = arrays.flatMap(item => item);
 console.log(flatten);
+
+// 4. Ordena un array de números de mayor a menor
+
+console.log("====== Pregunta 4 Ordenar de mayor a menor =========)");
+
+let listanumeros = [3, 4, 1, 6, 10];
+
+console.log("Array original: ", listanumeros);
+
+
+// ordenando
+listanumeros.sort(
+    function(a,b) {
+        return b - a;
+    })
+
+console.log("De Mayor a menor: ", listanumeros);
