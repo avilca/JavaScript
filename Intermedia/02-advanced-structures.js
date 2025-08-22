@@ -134,7 +134,7 @@ let myMap = new Map([
     ["name", "MoureDev"],
     ["age", 37],
 ])
-
+console.log("====forEach====");
 myMap.forEach((value, key) => console.log(`${key}: ${value}`))
 
 // - Coversión
@@ -145,7 +145,7 @@ const arrayFromMap = Array.from(myMap)
 console.log(arrayFromMap)
 
 // Mapa a diccionario
-
+console.log("========");
 const objectFromMap = Object.fromEntries(myMap)
 console.log(objectFromMap)
 

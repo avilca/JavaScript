@@ -101,11 +101,21 @@ console.log(diferencia);
 
 console.log("====== Pregunta 6 =========");
 console.log("====== Iteración de unión =========");
-union.forEach(element => console.log(element))
+union.forEach(element => console.log(element));
 console.log("====== Iteración de interseción =========");
-intersection.forEach(element => console.log(element))
+intersection.forEach(element => console.log(element));
 console.log("====== Iteración de diferencia =========");
-diferencia.forEach(element => console.log(element))
+diferencia.forEach(element => console.log(element));
+
+// 7. Crea un mapa que almacene información se usuarios (nombre, edad y email) e itera los datos
+console.log("====== Pregunta 7 Mapa de usuarios =========");
+
+let listaUsuarios = [
+  { nombre: 'Alice', age: 25, email: 'alice@gmail.com' },
+  { nombre: 'Bob', age: 30, email: 'ob@gmail.com' },
+  { nombre: 'Charlie', age: 35, email: 'charlie@gmail.com' }
+];
 
 
+listaUsuarios.forEach((usuario, key) => console.log(`Nombre: ${usuario.nombre}, Edad: ${usuario.age}, Email: ${usuario.email}`))
 
