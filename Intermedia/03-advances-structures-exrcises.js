@@ -63,7 +63,6 @@ console.log(flatten);
 console.log("====== Pregunta 4 Ordenar de mayor a menor =========)");
 
 let listanumeros = [3, 4, 1, 6, 10];
-
 console.log("Array original: ", listanumeros);
 
 
@@ -74,3 +73,29 @@ listanumeros.sort(
     })
 
 console.log("De Mayor a menor: ", listanumeros);
+
+// 5. Dados dos sets, encuentra la unión, intersección y diferencia de ellos
+
+console.log("====== Pregunta 5 Unión, Intersección y Diferencia de Sets =========");
+
+let Array1 = new Set([1, 2, 3, 4, 5, 6]);
+let Array2 = new Set([7, 8, 9, 3, 11, 2, 1, 10]);
+
+console.log("Array 1: ", Array1);
+console.log("Array 2: ", Array2);
+
+console.log("====================== Unión ========================");
+let union = new Set([...Array1, ...Array2]);
+console.log(union);
+
+console.log("====================== Intersección ========================");
+let intersection = new Set([...Array1].filter(element => Array2.has(element)));
+console.log(intersection);
+
+console.log("====================== Diferencia ========================");
+let diferencia = new Set([...Array1].filter(element => !Array2.has(element)));
+console.log(diferencia);
+
+
+
+
