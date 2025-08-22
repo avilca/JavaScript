@@ -113,7 +113,7 @@ console.log("====== Pregunta 7 Mapa de usuarios =========");
 let listaUsuarios = [
   { nombre: 'Alice', age: 25, email: 'alice@gmail.com' },
   { nombre: 'Bob', age: 30, email: 'ob@gmail.com' },
-  { nombre: 'Charlie', age: 35, email: 'charlie@gmail.com' }
+  { nombre: 'Charlie', age: 17, email: 'charlie@gmail.com' }
 ];
 
 
@@ -126,3 +126,11 @@ console.log("====== Pregunta 8 =========");
 
 let nombresUsuarios = listaUsuarios.map(usuario => usuario.nombre);
 console.log(nombresUsuarios);
+
+// 9. Dado el mapa anterior, obtén un array con los email de los usuarios mayores de edad y transfórmalo a un set
+
+console.log("====== Pregunta 9  Mayores de edad y correos=========");
+
+
+let emailsMayores = listaUsuarios.filter(usuario => usuario.age >= 18).map(usuario => usuario.email);
+console.log(emailsMayores);
