@@ -134,3 +134,10 @@ console.log("====== Pregunta 9  Mayores de edad y correos=========");
 
 let emailsMayores = listaUsuarios.filter(usuario => usuario.age >= 18).map(usuario => usuario.email);
 console.log(emailsMayores);
+
+
+// 10. Transforma el mapa en un objeto, a continuación, transforma el objeto en un mapa con clave el email de cada usuario y como valor todos los datos del usuario
+console.log("====== Pregunta 10 Transformar mapa a objeto y viceversa =========");
+
+let objetoUsuarios = Object.fromEntries(listaUsuarios.map(usuario => [usuario.email, usuario]));
+console.log(objetoUsuarios);
