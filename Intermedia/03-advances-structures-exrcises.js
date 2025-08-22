@@ -97,5 +97,15 @@ let diferencia = new Set([...Array1].filter(element => !Array2.has(element)));
 console.log(diferencia);
 
 
+// 6. Itera los resultados del ejercicio anterior
+
+console.log("====== Pregunta 6 =========");
+console.log("====== Iteración de unión =========");
+union.forEach(element => console.log(element))
+console.log("====== Iteración de interseción =========");
+intersection.forEach(element => console.log(element))
+console.log("====== Iteración de diferencia =========");
+diferencia.forEach(element => console.log(element))
+
 
 

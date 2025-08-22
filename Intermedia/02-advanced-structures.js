@@ -125,7 +125,7 @@ console.log([...setA]);
 // -Iteración
 
 // forEach
-
+console.log("====forEach====");
 setA.forEach(element => console.log(element))
 
 // Maps avanzados
