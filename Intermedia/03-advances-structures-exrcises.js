@@ -119,3 +119,10 @@ let listaUsuarios = [
 
 listaUsuarios.forEach((usuario, key) => console.log(`Nombre: ${usuario.nombre}, Edad: ${usuario.age}, Email: ${usuario.email}`))
 
+
+// 8. Dado el mapa anterior, crea un array con los nombres
+
+console.log("====== Pregunta 8 =========");
+
+let nombresUsuarios = listaUsuarios.map(usuario => usuario.nombre);
+console.log(nombresUsuarios);
