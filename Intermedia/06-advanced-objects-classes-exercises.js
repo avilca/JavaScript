@@ -97,3 +97,38 @@ class Vehiculo {
     }
 
 }
+
+
+// 7. Utiliza polimorfismo en dos clases diferentes
+console.log("===============Pregunta 7 ==================");
+
+class Auto extends Vehiculo {
+    constructor(marca, modelo) {
+        super();
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+
+    encender() {
+        console.log(`El auto ${this.marca} ${this.modelo} está encendido`);
+    }
+}
+
+let miAuto = new Auto('Tesla', 'Model 3');
+console.log(miAuto.encender());
+
+
+class Moto extends Vehiculo {
+    constructor(marca, modelo) {
+        super();
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+
+    encender() {
+        return `La moto ${this.marca} ${this.modelo} está encendida.`;
+    }
+}
+
+let miMoto = new Moto('Ducati', 'Panigale V2');
+console.log(miMoto.encender());
