@@ -29,3 +29,24 @@ programador.lenguaje = "JavaScript";
 console.log(programador.name);
 console.log(programador.age);
 console.log("Estoy programando en: ", programador.lenguaje);
+
+
+// 3. Define un método de instancia en un objeto
+
+console.log("===============Pregunta 3 ==================");
+
+class Persona {
+    constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    // Método de instancia
+    saludar() {
+        console.log(`Hola, soy ${this.nombre} y tengo ${this.edad} años`);
+    }
+}
+
+const persona1 = new Persona("Andres", 40);
+
+persona1.saludar();
