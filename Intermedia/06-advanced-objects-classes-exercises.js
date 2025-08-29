@@ -72,3 +72,12 @@ class Curso {
 let curso = new Curso("", "MoureDev", 3);
 curso.nombreCurso = "Django";
 console.log(curso.nombreCurso);
+
+// 5. Utiliza la operación assign en un objeto
+console.log("===============Pregunta 5 ==================");
+
+let person = {nombre: "Andres", edad: 40};
+let perfil = {profesion: "Developer", nivel: "Universitario", ciudad: "Comas, Lima"};
+
+let perfilCompleto = Object.assign(person, perfil);
+console.log(perfilCompleto);
