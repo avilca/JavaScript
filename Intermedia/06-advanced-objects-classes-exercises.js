@@ -4,15 +4,28 @@
 
 console.log("===============Pregunta 1 ==================");
 
-let object = {
+let persona = {
     name: "Jhony",
     age: 41,
 
 }
 
-object.Edad = function() {
+persona.Edad = function() {
     console.log(`Tengo ${this.age} años`)
 }
 
 
-object.Edad();
+persona.Edad();
+
+
+
+// 2. Crea un objeto que herede de otro
+
+console.log("===============Pregunta 2 ==================");
+
+let programador = Object.create(persona);
+programador.lenguaje = "JavaScript";
+
+console.log(programador.name);
+console.log(programador.age);
+console.log("Estoy programando en: ", programador.lenguaje);
