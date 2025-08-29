@@ -50,3 +50,25 @@ class Persona {
 const persona1 = new Persona("Andres", 40);
 
 persona1.saludar();
+
+// 4. Haz uso de get y set en un objeto
+
+console.log("===============Pregunta 4 ==================");
+
+class Curso {
+    constructor(nombre, profesor, duracion) {
+        this.nombre = nombre,
+        this.profesor = profesor;
+        this.duracion = duracion; // horas
+    }
+    get nombreCurso() {
+        return this.nombre;
+    }
+    set nombreCurso(nombreCurso){
+        this.nombre = nombreCurso;
+    }
+}
+
+let curso = new Curso("", "MoureDev", 3);
+curso.nombreCurso = "Django";
+console.log(curso.nombreCurso);
