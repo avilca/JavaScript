@@ -178,3 +178,25 @@ const bicicleta = new Bicicleta("La Bicicleta");
 
 console.log(bicicleta.name);
 bicicleta.run();
+
+
+// 9. Crea un Singleton
+
+console.log("===============Pregunta 9 ==================");
+
+class Singleton {
+    constructor() {
+        if (Singleton.instance) {
+            return Singleton.instance;
+        }
+        // propiedades del singleton
+        this.valor = "Soy único";
+        Singleton.instance = this;
+    }
+}
+
+const instancia1 = new Singleton();
+const instancia2 = new Singleton();
+
+console.log(instancia1 === instancia2); // true
+console.log(instancia1.valor); // "Soy único"
