@@ -81,3 +81,19 @@ let perfil = {profesion: "Developer", nivel: "Universitario", ciudad: "Comas, Li
 
 let perfilCompleto = Object.assign(person, perfil);
 console.log(perfilCompleto);
+
+// 6. Crea una clase abstracta
+console.log("===============Pregunta 6 ==================");
+
+class Vehiculo {
+    constructor() {
+        if (new.target === Vehiculo) {
+            throw new Error("No se puede instanciar una clase abstracta");
+        }
+    }
+
+    encender() {
+        throw new Error("Este método tiene que ser implementado en la clase hija");
+    }
+
+}
