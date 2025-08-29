@@ -132,3 +132,49 @@ class Moto extends Vehiculo {
 
 let miMoto = new Moto('Ducati', 'Panigale V2');
 console.log(miMoto.encender());
+
+
+// 8. Implementa un Mixin
+
+console.log("===============Pregunta 8 ==================");
+
+const runningMixin = {
+    run() {
+        console.log(`${this.name} Está corriendo en la pista`);
+    }
+}
+
+
+class Mototaxi extends Vehiculo {
+    constructor(name) {
+        super();
+        this.name = name;
+    }
+
+}
+
+
+class Bicicleta extends Vehiculo {
+    constructor(name) {
+        super();
+        this.name = name;
+    }
+
+}   
+
+
+Object.assign(Mototaxi.prototype, runningMixin);
+
+const mototaxti = new Mototaxi("La Mototaxi");
+
+console.log(mototaxti.name);
+mototaxti.run();
+
+
+
+Object.assign(Bicicleta.prototype, runningMixin);
+
+const bicicleta = new Bicicleta("La Bicicleta");
+
+console.log(bicicleta.name);
+bicicleta.run();
