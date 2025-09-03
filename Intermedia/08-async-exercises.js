@@ -197,7 +197,7 @@ console.log("=================== Pregunta 7 ==================");
 // 8. Crea tres funciones que devuelvan promesas con tiempos de espera distintos.
 // A continuación, usa Promise.all() para ejecutarlas todas al mismo tiempo y mostrar "Todas las promesas resueltas" cuando terminen.
 
-
+console.log("=================== Pregunta 8 ==================");
 
 function one() {
     return new Promise(resolve => {
@@ -232,5 +232,22 @@ Promise.all([one, two, three])
                 console.log("Todos las tareas completadas");
             })
 
+
+// 9. Crea una función waitSeconds(segundos) que use setTimeout dentro de una Promesa para esperar la cantidad de segundos indicada.
+//    A continuación, usa async/await para que se espere 3 segundos antes de mostrar "Tiempo finalizado" en consola.
+
+
+function waitSeconds(segundos) {
+    return new Promise(resolve => {
+        setTimeout(resolve, segundos * 1000);
+    });
+}
+
+async function mostrarMensaje() {
+    await waitSeconds(3);
+    console.log("Tiempo finalizado");
+}
+
+mostrarMensaje();
 
 
