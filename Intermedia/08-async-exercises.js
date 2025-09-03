@@ -120,3 +120,34 @@ firstTask()
     .then(() => {
         console.log("Todos las tareas completadas");
     })
+
+// 5. Transforma el ejercicio anterior de Promesas en una función async/await llamada executeTasks().
+
+console.log("=================== Pregunta 5 ==================");
+
+
+async function executeTasks(s) {
+
+    return new Promise(resolve => setTimeout(resolve, s))
+
+}
+
+async function process() {
+
+    console.log("Inicio del proceso de tareas");
+
+    await executeTasks(5000)
+    console.log("Proceso de tarea 1 despues 5 segundos");
+
+    await executeTasks(7000)
+    console.log("Proceso de tarea 2 despues 7 segundos");
+
+    await executeTasks(9000)
+    console.log("Proceso de tarea 3 despues 9 segundos");
+
+    console.log("Fin del proceso de tareas");
+
+}
+
+process();
+
