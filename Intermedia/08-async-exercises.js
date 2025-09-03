@@ -23,8 +23,7 @@ saludar(" Juan", mostrarSaludo);
 
 console.log("=================== Pregunta 2 ==================");
 
-function task1(callback) {
-    
+function task1(callback) {   
     setTimeout(() => {
         console.log("Tarea 1 completada");
         callback();
@@ -49,7 +48,7 @@ function task3(callback) {
 task1(() => {
     task2(() => {
         task3(() => {
-            console.log("Todos las tareas completadas");
+            console.log("Todos las tareas con callback finished");
         })
     })
 });
@@ -78,4 +77,46 @@ verificarNumeroPromise(5)
     })
     .catch(error => {
         console.log(error);
+    })
+
+
+// 4. Crea tres funciones que devuelvan promesas:
+//    firstTask(): tarda 1s y muestra "Primera tarea completada".
+//    secondTask(): tarda 2s y muestra "Segunda tarea completada".
+//    thirdTask(): tarda 1.5s y muestra "Tercera tarea completada".
+
+console.log("=================== Pregunta 4 ==================");
+
+function firstTask() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            console.log("Primera tarea completada");
+            resolve();
+        }, 1000)
+    })
+}
+
+function secondTask() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            console.log("Segunda tarea completada");
+            resolve();
+        }, 2000)
+    })
+}
+
+function thirdTask() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            console.log("Tercera tarea completada");
+            resolve();
+        }, 1500)
+    })
+}
+
+firstTask()
+    .then(secondTask)
+    .then(thirdTask)
+    .then(() => {
+        console.log("Todos las tareas completadas");
     })
