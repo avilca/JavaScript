@@ -53,3 +53,29 @@ task1(() => {
         })
     })
 });
+
+// 3. Crea una función para verificar un número que retorne una Promesa. 
+//    Si el número es par, la promesa se resuelve con el mensaje "Número par". 
+//    Si el número es impar, la promesa se rechaza con el mensaje "Número impar".
+
+console.log("=================== Pregunta 3 ==================");
+
+function verificarNumeroPromise(numero) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (numero % 2 === 0) {
+                resolve("Número par");
+            } else {
+                reject("Número impar");
+            }
+        }, 2000);
+    });
+}
+
+verificarNumeroPromise(5)
+    .then(result => {
+        console.log(result);
+    })
+    .catch(error => {
+        console.log(error);
+    })
