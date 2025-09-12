@@ -20,7 +20,7 @@
 
 // Consumir una API
 
-/* fetch("https://jsonplaceholder.typicode.com/posts")
+fetch("https://jsonplaceholder.typicode.com/posts")
     .then(response => {
         // Transforma la respuesta a JSON
         return response.json()
@@ -33,11 +33,11 @@
         // Captura errores
         console.log("Error", error)
     })
- */
+
 
 //  Uso de Async/Await
 
-/* async function getPosts() {
+async function getPosts() {
 
    try {
         const response = await fetch("https://jsonplaceholder.typicode.com/posts") 
@@ -52,16 +52,15 @@
     }
 
    
-} */
+}
 
-// getPosts();
+getPosts();
 
 // Solicitud POST
 
-/* async function createPost() {
+async function createPost() {
 
    try {
-
         const newPost = {
             userId: 1,
             title: "Este es el título de mis post",
@@ -87,11 +86,11 @@
    
 }
 
-createPost();  */
+createPost(); 
 
 // Manejo de Errores
 
-/* fetch("https://jsonplaceholder.typicode.com/luasoft")
+fetch("https://jsonplaceholder.typicode.com/luasoft")
     .then(response => {
         if (!response.ok) {
             throw Error(`Error HTTP, ${response.status}`)
@@ -100,7 +99,7 @@ createPost();  */
     })
     .catch(error => {
         console.log("Error", error)
-    }) */
+    })
 
 
 // Métodos HTTP adiciones
@@ -108,7 +107,7 @@ createPost();  */
 // - PATCH
 // - OPTIONS
 
-/* async function partialPostUpdate() {
+async function partialPostUpdate() {
 
    try {
         const response = await fetch("https://jsonplaceholder.typicode.com/posts/10", {
@@ -130,12 +129,12 @@ createPost();  */
    
 }
 
-partialPostUpdate();  */
+partialPostUpdate(); 
 
 
 // Autenticación mediante API Key
 
-async function getWeather(city) {
+/* async function getWeather(city) {
     const apiKey = "bc423c75dd6df244e2e76d2217baa06b"
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
 
@@ -148,7 +147,7 @@ async function getWeather(city) {
     }
 }
 
-getWeather("Lima");
+getWeather("Lima"); */
 
 
 // Otros métodos de Autenticación y Autorización
