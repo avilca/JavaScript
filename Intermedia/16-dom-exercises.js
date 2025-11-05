@@ -3,15 +3,13 @@ const title = document.getElementById("title");
 title.textContent = "¡Hola Mundo!";
 
 
-/* // 2. Inserta una imagen con id="myImage" y cambia su atributo src a otra URL
-
-<img id="myImage" src="https://google.com"> </img>
+ // 2. Inserta una imagen con id="myImage" y cambia su atributo src a otra URL
 
 
 const imagen = document.getElementById("myImage");
 imagen.src = "https://flashscore.com";
 
-// 3. Crea un <div id="box"> sin clases y agrega la clase resaltado cuando se cargue la página
+/* // 3. Crea un <div id="box"> sin clases y agrega la clase resaltado cuando se cargue la página
 <div  id="box">
 
 </div> */
